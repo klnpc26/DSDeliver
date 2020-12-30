@@ -35,7 +35,7 @@ public class DB {
 		}
 	}
 	
-	private static Properties loadProperties() {
+	private static Properties loadProperties() {// acessa o arquivo e lê as propriedades e retornar no objeto do tipo Properties
 		try (FileInputStream fs = new FileInputStream("db.properties")) {
 			Properties props = new Properties();
 			props.load(fs);
